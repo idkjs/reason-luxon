@@ -1,7 +1,23 @@
 {
   "name": "reason-luxon",
   "namespace": "Luxon",
-  "version": "0.0.1",
+  "gentypeconfig": {
+		"language": "typescript",
+		"module": "es6",
+		"importPath": "relative",
+		"shims": {
+			"Js": "Js",
+			"React": "ReactShim",
+			"ReactEvent": "ReactEvent",
+			"ReasonPervasives": "ReasonPervasives",
+			"ReasonReact": "ReactShim"
+		},
+		"debug": {
+			"all": false
+		},
+		"exportInterfaces": true,
+		"fileHeader": "effector reason"
+	},
   "sources": [{ "dir": "src" }, { "dir": "test", "type": "dev" }],
   "package-specs": {
     "module": "commonjs",

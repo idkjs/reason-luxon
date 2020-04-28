@@ -20,15 +20,20 @@
     "build": "bsb -make-world",
     "clean": "bsb -clean-world",
     "start": "bsb -make-world -w",
-    "test": "jest"
+    "test": "jest",
+    "tsc": "tsc -p tsconfig.json",
+    "tsc:dev": "tsc -p tsconfig.json -w"
   },
   "peerDependencies": {
-    "luxon": "^1.21.0"
+    "luxon": "^1.23.0"
   },
   "devDependencies": {
     "@glennsl/bs-jest": "0.5.1",
-    "bs-platform": "7.2.2",
-    "luxon": "1.22.2"
+    "@types/node": "^13.13.4",
+    "bs-platform": "7.3.1",
+    "gentype": "^3.21.0",
+    "luxon": "1.23.0",
+    "typescript": "^3.8.3"
   },
   "dependencies": {},
   "jest": {
